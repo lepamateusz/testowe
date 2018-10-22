@@ -81,7 +81,7 @@ class TweetAnalyzer():
         df = pd.DataFrame(data=[tweet.text for tweet in tweets], columns=['Tweets'])
         df['len'] = np.array([len(tweet.text) for tweet in tweets])
         df['date'] = np.array([tweet.created_at for tweet in tweets])
-        df['source'] = np.array([tweet.source for tweet in tweets])
+        df['źródło'] = np.array([tweet.source for tweet in tweets])
         df['likes'] = np.array([tweet.favorite_count for tweet in tweets])
         df['retweets'] = np.array([tweet.retweet_count for tweet in tweets])
 
